@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>ĐĂNG KÝ</h1>
+    <p>Vui lòng điền thông tin để tạo tài khoản</p>
+    <hr>
+
+    <label>Tên đăng nhập</label>
+    <input type="text" id="reg_username" placeholder="Nhập tên đăng nhập">
+
+    <label>Mật khẩu</label>
+    <input type="password" id="reg_password" placeholder="Nhập mật khẩu">
+
+    <label>Nhập lại mật khẩu</label>
+    <input type="password" id="reg_repassword" placeholder="Nhập lại mật khẩu">
+
+    <button type="button" class="registerbtn" onclick="register()">
+        Đăng ký
+    </button>
+
+    <p>Bạn đã có tài khoản?
+        <a href="dangnhap.html">Đăng nhập</a>
+    </p>
+</div>
+
+<!-- JS PHẢI ĐẶT CUỐI BODY -->
+<script src="js/auth.js"></script>
+
+</body>
+</html>
+a {
+  color: dodgerblue;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<input type="text" id="reg_username" placeholder="Tên đăng nhập">
+<input type="password" id="reg_password" placeholder="Mật khẩu">
+<input type="password" id="reg_repassword" placeholder="Nhập lại mật khẩu">
+
+<button type="button" onclick="register()">Đăng ký</button>
+
+<script src="js/auth.js"></script>
+  <div class="container">
+    <h1>ĐĂNG KÝ </h1>
+    <p>Vui lòng điền vào mẫu này để tạo một tài khoản.</p>
+    <hr>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Nhập Email" name="email" id="email" required>
+    <label for="psw"><b>Mật Khẩu</b></label>
+    <input type="password" placeholder="Nhập Mật Khẩu" name="psw" id="psw" required>
+    <label for="psw-repeat"><b>Lặp Lại Mật Khẩu</b></label>
+    <input type="password" placeholder="Lặp Lại Mật Khẩu" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#"> Điều khoản & Quyền riêng tư</a>của chúng tôi.</p>
+    <button type="submit" class="registerbtn">Đăng Ký</button>
+  </div>
+  <div class="container signin">
+    <p>Bạn có sẵn sàng để tạo một tài khoản? <a title="Đăng Nhập" href="./dangnhap.html">Đăng Nhập</a>.</p>
+  </div>
+</form>
+</body>
+</html>
